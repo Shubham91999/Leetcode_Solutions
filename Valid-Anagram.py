@@ -5,26 +5,42 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+        """
+        1. Sorting String
+        if len(s) != len(t):
+            return False
+        return sorted(s) == sorted(t)
+        """
 
-        #Approach 1 = Sorting both the strings and then comparing the sorted strings
-
-        # sorted_s = ''.join(sorted(s))
-        # sorted_t = ''.join(sorted(t))
-        # print(sorted_s)
-        # print(sorted_t)
-        # if sorted_s == sorted_t:
-        #     return True
-        # else:
-        #     return False
-
-        # sorted_s = sorted(s)
-        # sorted_t = sorted(t)
-        # if sorted_s == sorted_t:
-        #     return True
-        # else: 
-        #     return False
-
-        #Approach 2 = Using counter 
+        """
+        2. Using Counter
+        if len(s) != len(t):
+            return False
         return Counter(s) == Counter(t)
+        """
 
+        """
+        3. HashTable 
+        if len(s) != len(t):
+            return False
 
+        countS, countT = {}, {}
+
+        for i in range(len(s)):
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countT.get(t[i], 0)
+        return countS == countT
+        """
+
+        if len(s) != len(t):
+            return False
+
+        count = [0] * 26
+        for i in range(len(s)):
+            count[ord(s[i]) - ord('a')] += 1
+            count[ord(t[i]) - ord('a')] -= 1
+
+        for val in count:
+            if val != 0:
+                return False
+        return True
