@@ -8,20 +8,36 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        def rec(root: ListNode, cur: ListNode) -> ListNode:
-            if not cur:
-                return root
-            root = rec(root, cur.next)
 
-            if not root:
-                return None
-            tmp = None
-            if root == cur or root.next == cur:
-                cur.next = None
-            else:
-                tmp = root.next
-                root.next = cur
-                cur.next = tmp
-            return tmp
-            
-        head = rec(head, head.next)
+        # 1. Brute Force Approach using array
+        # If nothing return None
+        if not head: 
+            None
+
+        # Array created to store LL elements
+        nodes = []
+        cur = head
+        while cur:
+            nodes.append(cur)
+            cur = cur.next
+
+        #print(nodes)
+
+        # Setting two pointers
+        i = 0
+        j = len(nodes) - 1 #last element
+
+        # Looping through array to reorder elements
+        while i < j:
+            nodes[i].next = nodes[j]
+            i += 1
+            if i >= j:
+                break
+            nodes[j].next = nodes[i]
+            j -= 1
+
+        nodes[i].next = None
+
+
+        
+        
