@@ -23,27 +23,34 @@ class Solution:
 
         # Using Breadth First Search
 
-        # Result list to store the result
+        # List to store result 
         res = []
 
-        #Using deque to implement queue
+        # Queue to maintain level
         q = collections.deque()
+        #Enqueuing queue with root node
         q.append(root)
 
+        # Loop to iterate till q is empty
         while q:
             qLen = len(q)
+            # List to maintain all elements at particular level
             level = []
-            # Loop will start from 0 and will iterate till the length of queue
+
             for i in range(qLen):
-                #Popping the elements from queue
+                # Popping the leftmost node
                 node = q.popleft()
+
                 if node:
                     level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
+
             if level:
-                    res.append(level)
+                res.append(level)
         return res
+
+            
 
 
 
