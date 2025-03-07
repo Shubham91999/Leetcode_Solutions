@@ -6,18 +6,39 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        if not root:
-            return True
+        # # 1. Depth First Search with recursion
+        # # Defining helper function to compare
+        # def valid(node, lower, upper):
+        #     # Empty tree is considered as BST 
+        #     if not node:
+        #         return True
+        #     # If node value does not lie in boundaries, return False
+        #     if not (node.val > lower and node.val < upper):
+        #         return False
+            
+        #     # Calling recrusively with UPDATED BOUNDARIES to check subtrees 
+        #     return (valid(node.left, lower, node.val) and valid(node.right, node.val, upper))
 
-        q = deque([(root, float("-inf"), float("inf"))])
+        # # Calling helper function on root with boundaries as -inf and inf
+        # return valid(root, float("-inf"), float("inf"))
 
-        while q:
-            node, left, right = q.popleft()
+        # 2. Breadth First Search
+
+        queue = deque([(root, float('-inf'), float("inf"))])
+
+        while queue:
+            node, left, right = queue.popleft()
+
+            if not node:
+                return True
+
             if not (left < node.val < right):
                 return False
+            
             if node.left:
-                q.append((node.left, left, node.val))
+                queue.append((node.left, left, node.val))
             if node.right:
-                q.append((node.right, node.val, right))
-
+                queue.append((node.right, node.val, right))
         return True
+
+
