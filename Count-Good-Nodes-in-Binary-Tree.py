@@ -4,27 +4,40 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        # self.res = 0
+        # 1. DFS Recursion
+        # def dfs(root, maxVal):
+        #     if not root:
+        #         return 0
+        #     res = 1 if root.val >= maxVal else 0
+        #     maxVal = max(maxVal, root.val)
+        #     res += dfs(root.left, maxVal)
+        #     res += dfs(root.right, maxVal)
+        #     return res
+        # return dfs(root, float('-inf'))
+
+        # 2. DFS Recursion with global variable
+        # self.count = 0
         # def dfs(root, maxVal):
         #     if not root:
         #         return 0
         #     if root.val >= maxVal:
-        #         self.res += 1
+        #         self.count += 1
         #         maxVal = root.val
-
         #     dfs(root.left, maxVal)
         #     dfs(root.right, maxVal)
-        #     return self.res
-        # return dfs(root, root.val)
+        #     return self.count
+        # return dfs(root, float('-inf'))
 
+        # 3. BFS with Queue
         if not root:
-            return 0
-
+            return None
         queue = deque()
         queue.append((root, float('-inf')))
         res = 0
+
         while queue:
             node, maxVal = queue.popleft()
             if node.val >= maxVal:
@@ -34,6 +47,5 @@ class Solution:
             if node.right:
                 queue.append((node.right, max(maxVal, node.val)))
         return res
-
 
 
