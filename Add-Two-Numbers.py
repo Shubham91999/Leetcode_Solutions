@@ -1,28 +1,59 @@
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-    
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> ListNode:
-        dummy = ListNode() # Creating dummy node to deal edge cases
-        cur = dummy   # Points to the node we are inserting digit 
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        '''
+        1. Brute Force: Check with set of current substring
+        substrings = []
+        maxSub = 0
+        for i in range(len(s)):
+            for j in range(i+1, len(s)+1):
+                substrings.append(s[i:j])
+        for s in substrings:
+            if len(s) == len(set(s)):
+                maxSub = max(maxSub, len(s))
+        return maxSub
+        '''
 
-        carry = 0
-        while l1 or l2 or carry: # Iterating till l1 or l2 has elements left
-            v1 = l1.val if l1 else 0   # If l1 present, assign value to v1 else 0
-            v2 = l2.val if l2 else 0   # If l2 present, assign value to v2 else 0
+        """
+        2. Brute Force with char set
+        res = 0
+        for i in range(len(s)):
+            charSet = set()
+            for j in range(i, len(s)):
+                if s[j] in charSet:
+                    break
+                charSet.add(s[j])
+            res = max(res, len(charSet))
+        return res
+        """
 
-            # New digit after addition
-            val = v1 + v2 + carry
-            carry = val // 10  # 15 // 10 -> 1 tens digit/place
-            val = val % 10     # 15 % 10 -> 5  Ones digit/place
-            cur.next = ListNode(val)  # Creating new node after addition for value
+        # 3. Sliding Window
+        # charSet = set() # Set to store and compare unique chars
+        # l = 0  # Left Pointer initialized at 0
+        # res = 0 # Store max length
 
-            # Updating pointers
-            cur = cur.next
-            l1 = l1.next if l1 else None
-            l2 = l2.next if l2 else None
-        return dummy.next
+        # for r in range(len(s)):  # Updating r from 0 to len(s)
+        #     while s[r] in charSet: # Checking if current char is already in set
+        #         charSet.remove(s[l]) # If found, delete chars from left pointer till current to remove duplicate element
+        #         l += 1
+        #     charSet.add(s[r]) # Adding current char
+        #     window_size = r - l + 1  # Calculating current window size
+        #     res = max(res, window_size) # Getting max 
+        # return res
+
+        # 4. Sliding Window Optimal with Dictionary
+        map = {} # char -> index
+        l, res = 0, 0
+
+        for r in range(len(s)): # R will iterate over all the chars starting from 0 to len(nums)
+            if s[r] in map: # If found in dict, move left pointer to one step after the previous occurence of that char
+                l = max(map[s[r]]+1, l)
+            
+            # If not found, add char in dictionary with its index
+            map[s[r]] = r
+            res = max(res, r - l + 1)
+
+        return res
+
+
 
 
