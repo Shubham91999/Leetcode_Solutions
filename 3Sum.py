@@ -1,68 +1,46 @@
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, numbers: List[List[int]]) -> List[int]:
+        # 1. Brute Force: Sort and nested loop for finding pair
+        # res = set()
+        # numbers.sort()
+        # for i in range(len(numbers)):
+        #     for j in range(i+1, len(numbers)):
+        #         for k in range(j+1, len(numbers)):
+        #             if numbers[i] + numbers[j] + numbers[k] == 0:
+        #                 temp = [numbers[i], numbers[j], numbers[k]]
+        #                 res.add(tuple(temp))
+        # return [list(i) for i in res]
 
-        """
-        1. Brute Force approach with nested for loops
-        res = set()
-        nums.sort()
-
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                for k in range(j+1, len(nums)):
-                    if nums[i] + nums[j] + nums[k] == 0:
-                        tmp = [nums[i], nums[j], nums[k]]
-                        res.add(tuple(tmp))
-        return [list(i) for i in res]
-        """
-
-        """
-        2. Hash Map 
-        nums.sort()
-        count = defaultdict(int)
-        for num in nums:
-            count[num] += 1
-
+        # 2. Two Pointer: Optimal Space
         res = []
-        for i in range(len(nums)):
-            count[nums[i]] -= 1
-            if i and nums[i] == nums[i-1]:
-                continue
-            
-            for j in range(i+1, len(nums)):
-                count[nums[j]] -= 1
-                if j - 1 > i and nums[j] == nums[j-1]:
-                    continue
-                target = -(nums[i] + nums[j])
-                if count[target] > 0:
-                    res.append([nums[i], nums[j], target])
+        numbers.sort() # Sorted array is required 
 
-            for j in range(i+1, len(nums)):
-                count[nums[j]] += 1
-        return res
-        """
+        for i, a in enumerate(numbers): # Looping over every number in nums array
 
-        res = []
-        nums.sort()
-
-        for i, a in enumerate(nums):
+            # Optimization by eliminating further checks, 
+            # when a is positive, it means b -> nums[l] and c -> nums[r] are going to be positive, addition of three positive numbers can't be 0
             if a > 0:
                 break
 
-            if i > 0 and a == nums[i-1]:
+            # If we get same value as before, we wont reuse, continue to next iteration
+            if i > 0 and a == numbers[i-1]:
                 continue
 
-            l, r = i+1, len(nums)-1
-            while l<r:
-                threeSum = a + nums[l] + nums[r]
-                if threeSum > 0:
+            # Two pointer solution used for two sum 
+            l, r = i+1, len(numbers) - 1  # Left initialized at current number a i.e. numbers[i] + 1
+            while l < r:
+                threeSum = a + numbers[l] + numbers[r]
+                if threeSum > 0: # If sum of all three is greater then 0
                     r -= 1
-                elif threeSum < 0:
+                elif threeSum < 0:  # Sum less than 0
                     l += 1
-                else:
-                    res.append([a, nums[l], nums[r]])
-                    l += 1
+                else:  # Sum == 0, we got pair
+                    res.append([a, numbers[l], numbers[r]])
+                    # Updating l and r
+                    l += 1  
                     r -= 1
-                    while nums[l] == nums[l - 1] and l < r:
+                    while numbers[l] == numbers[l-1] and l < r: # Updating left till we pass the repetative elements
                         l += 1
-                        
         return res
+
+       
