@@ -12,6 +12,7 @@ class Solution:
                     missingB += 1
                 if i == len(tops)-1:  # i reached end, it means we found target which appears atleast once in top or bottom array, we also have missing count
                     return min(missingT, missingB)  # Returning min
+                
         return -1
 
 
