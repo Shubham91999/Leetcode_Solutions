@@ -3,12 +3,14 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        #Last index of nums1
+        # 1. Brute Force
+        # nums1[m:] = nums2[:n]
+        # nums1.sort()
+
+        # 2. Three Pointers without extra space
         last = m + n - 1
 
-        #Marging elements in reverse order
         while m > 0 and n > 0:
-
             if nums1[m-1] > nums2[n-1]:
                 nums1[last] = nums1[m-1]
                 m -= 1
@@ -16,7 +18,6 @@ class Solution:
                 nums1[last] = nums2[n-1]
                 n -= 1
             last -= 1
-
         while n > 0:
             nums1[last] = nums2[n-1]
             n -= 1
