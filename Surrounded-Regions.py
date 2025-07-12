@@ -12,7 +12,6 @@ class Solution:
                 nr, nc = r + dr, c + dc
                 capture(nr, nc)
 
-
         # Calling capture function on border cell having "O"
         for r in range(rows):
             for c in range(cols):
