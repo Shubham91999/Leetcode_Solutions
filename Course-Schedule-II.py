@@ -19,7 +19,7 @@ class Solution:
         #     if crs in visit:  # If course is already visited and not needed to visit again
         #         return True
         #     cycle.add(crs)  # Maintaining current cycle
-        #     for pre in prereq[crs]:  # DFS on all prereqa of current course
+        #     for pre in prereq[crs]:  # DFS on all prereq of current course
         #         if not dfs(pre):
         #             return False
 
@@ -35,23 +35,54 @@ class Solution:
         # return output
 
         # 2. Topological Sort DFS
-        adj = [[] for i in range(numCourses)]
+        # adj = [[] for i in range(numCourses)]
+        # indegree = [0] * numCourses
+        # for crs, pre in prerequisites:
+        #     indegree[crs] += 1
+        #     adj[pre].append(crs)
+
+        # output = []
+        # def dfs(crs):
+        #     output.append(crs)
+        #     indegree[crs] -= 1
+        #     for nei in adj[crs]:
+        #         indegree[nei] -= 1
+        #         if indegree[nei] == 0:
+        #             dfs(nei)
+        # for i in range(numCourses):
+        #     if indegree[i] == 0:
+        #         dfs(i)
+        # return output if len(output) == numCourses else []
+
+        # 3. Topological Sort with BFS
         indegree = [0] * numCourses
+        adj = [[] for i in range(numCourses)]
         for crs, pre in prerequisites:
             indegree[crs] += 1
-            adj[pre].append(crs)
+            adj[pre].append(crs) # Once pre is finished, [crs] can be taken if their indegree is 0
 
-        output = []
-        def dfs(crs):
-            output.append(crs)
-            indegree[crs] -= 1
-            for nei in adj[crs]:
-                indegree[nei] -= 1
-                if indegree[nei] == 0:
-                    dfs(nei)
-        for i in range(numCourses):
-            if indegree[i] == 0:
-                dfs(i)
-        return output if len(output) == numCourses else []
+        q = deque()
+        for crs in range(numCourses):
+            if indegree[crs] == 0:
+                q.append(crs)
+
+        order = []
+        while q:
+            crs = q.popleft()
+            order.append(crs)
+            for nxt in adj[crs]:
+                indegree[nxt] -= 1
+                if indegree[nxt] == 0:
+                    q.append(nxt)
+
+        return order if len(order) == numCourses else []
+        
+
+
+
+
+
+
+
 
 
