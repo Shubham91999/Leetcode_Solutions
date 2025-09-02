@@ -37,32 +37,60 @@ class Solution:
         """
 
         # Sliding Window Approach with o(n)
-        if t == "":
+        # Edge Case
+        if len(t) == 0:
             return ""
-        
-        countT = {} 
-        window = {}
+
+        # Two hashmaps to maintain count of characters
+        countT = defaultdict(int)
+        window = defaultdict(int)
+
+        # Intializing countT, as it will never change
         for c in t:
-            countT[c] = 1 + countT.get(c, 0)
+            countT[c] += 1
 
-        have, need = 0, len(countT)
-        res, resLen = [-1, -1], float("infinity")
-        l = 0
+        have = 0            # Currently satisfying matches
+        need = len(countT)  # Need to satisfy 
+
+        res = [-1, -1]          # Initializing l and r pointers as -1
+        resLen = float('inf')   # Minimum length of substring initializing at max integer
+        l = 0                    # left pointer
+
+        # Slinding window part
         for r in range(len(s)):
-            c = s[r]
-            window[c] = 1 + window.get(c, 0)
+            c = s[r]  # Added to our current window, so incrementing the count
+            window[c] += 1
 
-            if c in countT and window[c] == countT[c]:
+            """
+            After adding char in window, 
+            we will check if it we need that character (it is present in t)
+            and the count of char in window matches count of char in t string
+
+            If it matches, that means we have one more match 
+            """
+            if c in countT and countT[c] == window[c]:
                 have += 1
+
+            """
+            After updating have, we need to check if it matches the need count
+            if matches and current window has length lesser than the previously found min,
+            1) we will update l and r pointers 
+            2) Update min length
+            3) Shorten window from left
+            4) Window changed, so update have count based on condition
+            5) update l pointer to remove char at left from window
+            """
 
             while have == need:
                 if (r-l+1) < resLen:
-                    res = [l,r]
+                    res = [l, r]
                     resLen = r-l+1
 
                 window[s[l]] -= 1
                 if s[l] in countT and window[s[l]] < countT[s[l]]:
                     have -= 1
                 l += 1
+
+        # Once the r pointer reaches end, res will be having l and r pointers giving minimum size window
         l, r = res
-        return s[l:r+1] if resLen != float("infinity") else ""
+        return s[l:r+1] if resLen != float('inf') else ""
