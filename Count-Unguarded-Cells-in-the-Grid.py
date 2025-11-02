@@ -18,6 +18,8 @@ Plan:
     - traverse all cells again and increment count
     - return count
 """
+from typing import List
+
 class Solution:
     def countUnguarded(self, m: int, n: int, guards: List[List[int]], walls: List[List[int]]) -> int:
         # Initialize grid: 0 = unoccupied, 1 = wall/guard, 2 = guarded
