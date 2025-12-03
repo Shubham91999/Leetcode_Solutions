@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         # 1. Brute Force - O(m*l*2^n)
@@ -34,19 +36,33 @@ class Solution:
         # return dfs(0)
 
         # 3. Dynamic Programming Top-Down
-        memo = {len(s):True}
-        def dfs(i):
-            if i in memo:
-                return memo[i]
+        # memo = {len(s):True}
+        # def dfs(i):
+        #     if i in memo:
+        #         return memo[i]
 
-            for w in wordDict:
-                if (i+len(w) <= len(s) and s[i:i+len(w)] == w):
-                    if dfs(i+len(w)):
-                        memo[i] = True
-                        return True
-            memo[i] = False
-            return False
-        return dfs(0)
+        #     for w in wordDict:
+        #         if (i+len(w) <= len(s) and s[i:i+len(w)] == w):
+        #             if dfs(i+len(w)):
+        #                 memo[i] = True
+        #                 return True
+        #     memo[i] = False
+        #     return False
+        # return dfs(0)
+
+        # 4. Bottom up approach
+        dp = [False] * (len(s) + 1)
+        dp[len(s)] = True
+
+        for i in range(len(s)-1, -1, -1):
+            for word in wordDict:
+                if (i + len(word)) <= len(s) and s[i:i + len(word)] == word:
+                    dp[i] = dp[i + len(word)]
+                    if dp[i]:
+                        break
+
+        return dp[0]
+
 
 
 
