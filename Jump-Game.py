@@ -1,44 +1,57 @@
+from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        # 1. Brute Force -> Time: Exponential : O(2^n)
-        # def dfs(i):
-        #     if i == len(nums)-1:
-        #         return True
+        # 1. Brute Force : Recursion
+        """
+        def dfs(i: int) -> bool:
+            # base case: reached the last position
+            if i == len(nums) - 1:
+                return True
+            # base case: overshoot
+            if i >= len(nums):
+                return False
 
-        #     end = min(len(nums)-1, i+nums[i])
-        #     for j in range(i + 1, end + 1):
-        #         if dfs(j):
-        #             return True
-        #     return False
-        # return dfs(0)
+            # recurrence
+            for j in range(1, nums[i]+1):
+                next_index = i + j
+                if dfs(next_index):
+                    return True
 
-        # 2. Dp with Memoization
-        # cache = {}
-        # def dp(i):
-        #     if i in cache:
-        #         return cache[i]
-        #     if i == len(nums)-1:
-        #         return True
-        #     if nums[i] == 0:
-        #         return False
+            return False
+        return dfs(0)
+        """
 
-        #     end = min(len(nums), i+nums[i]+1)
-        #     for j in range(i+1, end):
-        #         if dp(j):
-        #             cache[i] = True
-        #             return True
-        #     cache[i] = False
-        #     return False
-        # return dp(0)
+        # 2. DP: Recursion with memoization
+        """
+        cache = {}
+        def dfs(i: int) -> bool:
+            # base case: reached the last position
+            if i == len(nums) - 1:
+                return True
+            # base case: overshoot
+            if i >= len(nums):
+                return False
+            # cache check
+            if i in cache:
+                return cache[i]
 
-        # 3. Greedy Approach
-        n = len(nums)
-        goal = n-1
+            # recurrence
+            for j in range(1, nums[i]+1):
+                next_index = i + j
+                if dfs(next_index):
+                    cache[i] = True
+                    return True
 
-        for i in range(n-1, -1, -1):
-            if i + nums[i] >= goal:
+            cache[i] = False
+            return False
+        return dfs(0)
+        """
+
+        # 3. Greedy approach
+        goal = len(nums) - 1
+
+        for i in range(len(nums)-2, -1, -1):
+            cur_max = i + nums[i]
+            if cur_max >= goal:
                 goal = i
-        return True if goal == 0 else False
-
-
-        
+        return goal == 0
