@@ -23,6 +23,7 @@ class Solution:
         # return dfs(0,0)
 
         # 2. Dynamic Programming (Top Down)
+        """
         m, n = len(word1), len(word2)
         cache = {}
         
@@ -45,7 +46,47 @@ class Solution:
             cache[(i, j)] = res
             return res
         return dfs(0, 0)
- 
-            
-            
+        """
+
+        # 3. DP: Bottom-up 
+        """
+        m, n = len(word1), len(word2)
+        dp = [[0] * (n+1) for _ in range(m+1)]
+
+        # setting base case values
+        # last row
+        for i in range(n+1):
+            dp[m][i] = n - i
+        # last column 
+        for i in range(m+1):
+            dp[i][n] = m - i
+
+        for i in range(m-1, -1, -1):
+            for j in range(n-1, -1, -1):
+                # if char matches
+                if word1[i] == word2[j]:
+                    dp[i][j] = dp[i+1][j+1]
+                else:
+                    dp[i][j] = 1 + min(dp[i+1][j], dp[i][j+1], dp[i+1][j+1])
+        return dp[0][0]
+        """
+
+        # 4. Bottom-up, space optimized
+        m, n = len(word1), len(word2)
+        dp = [0] * (n+1)
+
+        for i in range(n+1):
+            dp[i] = n - i
+
+        for i in range(m-1, -1, -1):
+            newDp = [0] * (n+1)
+            newDp[n] = m - i
+            for j in range(n-1, -1, -1):
+                # if char matches
+                if word1[i] == word2[j]:
+                    newDp[j] = dp[j+1]
+                else:
+                    newDp[j] = 1 + min(dp[j], dp[j+1], newDp[j+1])
+            dp = newDp
+        return dp[0]        
 
