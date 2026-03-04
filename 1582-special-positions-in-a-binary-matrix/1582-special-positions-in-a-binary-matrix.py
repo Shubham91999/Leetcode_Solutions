@@ -25,8 +25,6 @@ class Solution:
                     return 0
             return 1
  
-
-
         for r in range(ROWS):
             for c in range(COLS):
                 if mat[r][c] == 1:
