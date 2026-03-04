@@ -1,5 +1,6 @@
 class Solution:
     def numSpecial(self, mat: List[List[int]]) -> int:
+        """
         count = 0
         ROWS, COLS = len(mat), len(mat[0])
 
@@ -30,3 +31,28 @@ class Solution:
                 if mat[r][c] == 1:
                     count += helper(r, c)
         return count
+        """
+
+        ROWS, COLS = len(mat), len(mat[0])
+        row_count = [0] * ROWS
+        col_count = [0] * COLS
+
+        for r in range(ROWS):
+            for c in range(COLS):
+                if mat[r][c] == 1:
+                    row_count[r] += 1
+                    col_count[c] += 1
+
+
+        count = 0
+        for r in range(ROWS):
+            for c in range(COLS):
+                if mat[r][c] == 1:
+                    if row_count[r] == 1 and col_count[c] == 1:
+                        count += 1
+        return count
+
+
+
+                    
+
