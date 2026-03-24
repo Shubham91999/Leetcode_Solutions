@@ -9,6 +9,7 @@
 
 class Solution:
     def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
+        """
         ROWS, COLS = len(grid), len(grid[0])
         MOD = 12345
 
@@ -53,4 +54,27 @@ class Solution:
 
         #print(mat)
         return mat
+        """
+
+        ROWS, COLS = len(grid), len(grid[0])
+        MOD = 12345
+
+        # Step 1: Initialize result matrix
+        res = [[1] * COLS for _ in range(ROWS)]
+
+        # Step 2: Prefix pass (left → right, top → bottom)
+        prefix = 1
+        for r in range(ROWS):
+            for c in range(COLS):
+                res[r][c] = prefix
+                prefix = (prefix * grid[r][c]) % MOD
+
+        # Step 3: Suffix pass (reverse order)
+        suffix = 1
+        for r in range(ROWS - 1, -1, -1):
+            for c in range(COLS - 1, -1, -1):
+                res[r][c] = (res[r][c] * suffix) % MOD
+                suffix = (suffix * grid[r][c]) % MOD
+
+        return res
         
