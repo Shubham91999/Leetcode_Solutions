@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1980-find-unique-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1980-find-unique-binary-string) |
 | [2573-find-the-string-with-lcp](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2573-find-the-string-with-lcp) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 ## Breadth-First Search
 |  |
@@ -104,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1980-find-unique-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1980-find-unique-binary-string) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3548-equal-sum-grid-partition-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3548-equal-sum-grid-partition-ii) |
 ## Backtracking
 |  |
@@ -138,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
 ## Two Pointers
 |  |
