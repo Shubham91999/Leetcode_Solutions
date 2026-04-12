@@ -8,20 +8,21 @@ class Solution:
     def goodNodes(self, root: TreeNode) -> int:
         if not root:
             return 0
-        count = 1
 
-        def dfs(root, cur_max):
-            nonlocal count 
-            if not root:
-                return
-            if root.val >= cur_max:
+        q = deque()
+        q.append([root, root.val])
+        count = 0
+
+        while q:
+            node, cur_max = q.popleft()
+
+            if node.val >= cur_max:
                 count += 1
-                cur_max = root.val
+                cur_max = max(cur_max, node.val)
 
-            dfs(root.left, cur_max)
-            dfs(root.right, cur_max)
-
-        dfs(root.left, root.val)
-        dfs(root.right, root.val)
+            if node.left:
+                q.append([node.left, cur_max])
+            if node.right:
+                q.append([node.right, cur_max])
 
         return count
