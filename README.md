@@ -31,11 +31,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 ## Union-Find
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [2573-find-the-string-with-lcp](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2573-find-the-string-with-lcp) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 ## Ordered Set
@@ -68,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [0874-walking-robot-simulation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0874-walking-robot-simulation) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1582-special-positions-in-a-binary-matrix) |
@@ -96,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1582-special-positions-in-a-binary-matrix) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
@@ -203,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
