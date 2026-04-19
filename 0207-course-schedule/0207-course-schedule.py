@@ -1,30 +1,29 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        adj = defaultdict(list)
-        inorder = [0] * numCourses
+        adj = {i: [] for i in range(numCourses)}
 
-        for u, v in prerequisites:
-            adj[v].append(u)
-            inorder[u] += 1
+        for crs, pre in prerequisites:
+            adj[crs].append(pre)
 
-        queue = deque()
-        for num in range(numCourses):
-            if inorder[num] == 0:
-                queue.append(num)
-                
-        taken = 0
-        while queue:
-            cur = queue.popleft()
-            taken += 1
-            for nei in adj[cur]:
-                inorder[nei] -= 1
-                if inorder[nei] == 0:
-                    queue.append(nei)
+        visiting = set()
 
-        return taken == numCourses
+        def dfs(crs: int) -> bool:
+            # Cycle detection 
+            if crs in visiting:
+                return False
+            # Base case -> all prereqs can be taken 
+            if adj[crs] == []:
+                return True
 
+            visiting.add(crs)
+            for pre in adj[crs]:
+                if not dfs(pre):
+                    return False
+            visiting.remove(crs)
+            adj[crs] = []
+            return True
 
-
- 
-
-        
+        for crs in range(numCourses):
+            if not dfs(crs):
+                return False
+        return True
