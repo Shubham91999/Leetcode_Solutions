@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0133-clone-graph) |
 | [0874-walking-robot-simulation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0874-walking-robot-simulation) |
 | [1980-find-unique-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1980-find-unique-binary-string) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
@@ -207,10 +209,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
+## Graph Theory
+|  |
+| ------- |
+| [0133-clone-graph](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0133-clone-graph) |
 <!---LeetCode Topics End-->
