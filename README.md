@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [1622-fancy-sequence](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1622-fancy-sequence) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -88,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0130-surrounded-regions](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
+| [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [0874-walking-robot-simulation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0874-walking-robot-simulation) |
 | [0994-rotting-oranges](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0994-rotting-oranges) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
@@ -156,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2463-minimum-total-distance-traveled](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2463-minimum-total-distance-traveled) |
