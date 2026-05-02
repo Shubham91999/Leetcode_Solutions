@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
+| [0788-rotated-digits](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0788-rotated-digits) |
 | [1622-fancy-sequence](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1622-fancy-sequence) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -159,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
+| [0788-rotated-digits](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0788-rotated-digits) |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1594-maximum-non-negative-product-in-a-matrix) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [2463-minimum-total-distance-traveled](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2463-minimum-total-distance-traveled) |
