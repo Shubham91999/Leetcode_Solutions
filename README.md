@@ -241,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0061-rotate-list) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [3643-flip-square-submatrix-vertically](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3643-flip-square-submatrix-vertically) |
 ## Enumeration
@@ -300,4 +301,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
+## Linked List
+|  |
+| ------- |
+| [0061-rotate-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0061-rotate-list) |
 <!---LeetCode Topics End-->
