@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0210-course-schedule-ii) |
 | [0994-rotting-oranges](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0994-rotting-oranges) |
+| [1306-jump-game-iii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1306-jump-game-iii) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
@@ -101,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [0874-walking-robot-simulation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0874-walking-robot-simulation) |
 | [0994-rotting-oranges](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0994-rotting-oranges) |
+| [1306-jump-game-iii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1306-jump-game-iii) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
@@ -295,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0210-course-schedule-ii) |
+| [1306-jump-game-iii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1306-jump-game-iii) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
