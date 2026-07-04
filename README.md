@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2573-find-the-string-with-lcp](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2573-find-the-string-with-lcp) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3666-minimum-operations-to-equalize-binary-string) |
@@ -428,6 +430,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Binary Tree
@@ -442,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0210-course-schedule-ii) |
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
+| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3620-network-recovery-pathways](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3620-network-recovery-pathways) |
 ## Topological Sort
