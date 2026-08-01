@@ -1,8 +1,12 @@
 class Solution:
     def predictTheWinner(self, nums: List[int]) -> bool:
-
+        cache = {}
 
         def maxAdvantage(nums: List[int], i: int, j: int) -> int:
+            # Check in cache
+            if (i, j) in cache:
+                return cache[(i, j)]
+
             # Base Case: Last element in nums
             if i == j:
                 # Both i and j indices are point to same element, that means its the only number left in array
@@ -19,7 +23,8 @@ class Solution:
             # Current player takes from right (nums[j])
             right = nums[j] - maxAdvantage(nums, i, j-1)
 
-            return max(left, right)
+            cache[(i, j)] = max(left, right)
+            return cache[(i, j)]
 
         advantage = maxAdvantage(nums, 0, len(nums)-1)
 
