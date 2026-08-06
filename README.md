@@ -166,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0048-rotate-image](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0048-rotate-image) |
 | [0130-surrounded-regions](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0130-surrounded-regions) |
@@ -433,6 +434,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [1288-remove-covered-intervals](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1288-remove-covered-intervals) |
@@ -462,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
 | [0061-rotate-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0061-rotate-list) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1861-rotating-the-box) |
