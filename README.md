@@ -129,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0338-counting-bits](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0338-counting-bits) |
 | [1009-complement-of-base-10-integer](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1009-complement-of-base-10-integer) |
+| [1386-cinema-seat-allocation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3513-number-of-unique-xor-triplets-i) |
@@ -157,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1386-cinema-seat-allocation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
@@ -200,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1331-rank-transform-of-an-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1340-jump-game-v](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1340-jump-game-v) |
 | [1345-jump-game-iv](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1345-jump-game-iv) |
+| [1386-cinema-seat-allocation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1406-stone-game-iii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1406-stone-game-iii) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -368,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1331-rank-transform-of-an-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1345-jump-game-iv](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1345-jump-game-iv) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1386-cinema-seat-allocation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1980-find-unique-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1980-find-unique-binary-string) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
