@@ -1,30 +1,34 @@
 """
-- Get digits 
-- Get sum of digits 
-- Get product of digits 
-- Check if number is divisible by both 
-    - if yes, return true
-    - else, return false
+- Initialize variables for digitSum and digitProduct
+- use arithmetic calculation to select a single digit in number 
+    - 99
+    - Mod number by 10 to get the digit at one's place -> 9
+    - Divide the number by 10 -> 9
+    - Repeat till the division is 0
+- Add it to digitSum
+- Multiple with digitProduct
+- Check if number of divisible by (digitSum + digitProduct)
+    - if yes, return True
+    - False otherwise
 """
-
 
 class Solution:
     def checkDivisibility(self, n: int) -> bool:
-        listN = self.getDigits(n)
-        digit_sum = 0
-        digit_product = 1
+        digitSum = 0
+        digitProduct = 1
+        num = n
 
-        for num in listN:
-            digit_sum += int(num)
-            digit_product *= int(num)
-
-        if n % (digit_sum + digit_product) == 0:
+        while num:
+            digit = num % 10 
+            digitSum += digit
+            digitProduct *= digit
+            num = num // 10
+        
+        # print(digitSum)
+        # print(digitProduct)
+        if n % (digitSum + digitProduct) == 0:
             return True
-
         return False
 
-    def getDigits(self, n: int) -> List[int]:
-        strN = str(n)
-        return list(strN)
-
+        
         
