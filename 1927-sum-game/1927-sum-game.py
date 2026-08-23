@@ -23,7 +23,7 @@ Now, note that (lam+ram) is the total number of possible Alice's moves, which eq
 
 Thus, the task comes down to calculating the sums of the digits and counts of ? in the right and left halves of the num, which could be done in one pass.
 """
-
+"""
 class Solution:
     def sumGame(self, num: str) -> bool:
         mid = len(num) // 2
@@ -53,6 +53,31 @@ class Solution:
                 digit_sum += int(c)
 
         return [digit_sum, counter]
+"""
 
-    
+class Solution:
+    def sumGame(self, num: str) -> bool:
+        ls, rs = 0, 0
+        rm, lm = 0, 0
+        mid = len(num)//2
+
+        for i in range(len(num)):
+            if num[i] == '?':
+                if i < mid:
+                    lm += 1
+                else:
+                    rm += 1
+            else:
+                if i < mid:
+                    ls += int(num[i])
+                else:
+                    rs += int(num[i])
+
+        alice_moves = (lm + rm + 1) // 2
+
+        left_wins = ls + 9 * alice_moves > rs + 9 * rm
+        right_wins = rs + 9 * alice_moves > ls + 9 * lm
+
+        return left_wins or right_wins
+     
         
