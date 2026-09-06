@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0115-distinct-subsequences](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0115-distinct-subsequences) |
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0657-robot-return-to-origin](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0657-robot-return-to-origin) |
 | [0796-rotate-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0796-rotate-string) |
@@ -354,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0115-distinct-subsequences](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0115-distinct-subsequences) |
 | [0338-counting-bits](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0338-counting-bits) |
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [0486-predict-the-winner](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0486-predict-the-winner) |
