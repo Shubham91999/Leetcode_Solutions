@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0796-rotate-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0796-rotate-string) |
 | [0940-distinct-subsequences-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1189-maximum-number-of-balloons](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0210-course-schedule-ii) |
 | [0994-rotting-oranges](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0994-rotting-oranges) |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1306-jump-game-iii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1345-jump-game-iv) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
@@ -432,6 +434,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0133-clone-graph](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0133-clone-graph) |
 | [0874-walking-robot-simulation](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0874-walking-robot-simulation) |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1189-maximum-number-of-balloons](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1331-rank-transform-of-an-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1345-jump-game-iv](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1345-jump-game-iv) |
@@ -473,6 +476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1980-find-unique-binary-string](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1980-find-unique-binary-string) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
@@ -554,6 +558,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0628-maximum-product-of-three-numbers) |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1288-remove-covered-intervals](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1340-jump-game-v](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1340-jump-game-v) |
@@ -718,6 +723,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Merge Sort
 |  |
