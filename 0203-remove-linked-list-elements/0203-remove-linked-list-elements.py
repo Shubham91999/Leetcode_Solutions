@@ -9,7 +9,7 @@ class Solution:
         dummy.next = head
         cur = dummy
 
-        while cur.next is not None:
+        while cur.next:
             if cur.next.val == val:
                 cur.next = cur.next.next
             else:
