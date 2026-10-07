@@ -611,6 +611,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0061-rotate-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0061-rotate-list) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1861-rotating-the-box) |
@@ -727,6 +728,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0061-rotate-list](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0061-rotate-list) |
 | [0203-remove-linked-list-elements](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0203-remove-linked-list-elements) |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
