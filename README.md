@@ -906,5 +906,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Database
 |  |
 | ------- |
+| [1148-article-views-i](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1148-article-views-i) |
 | [1683-invalid-tweets](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1683-invalid-tweets) |
 <!---LeetCode Topics End-->
