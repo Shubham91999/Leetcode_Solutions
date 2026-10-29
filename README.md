@@ -903,4 +903,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+## Database
+|  |
+| ------- |
+| [1683-invalid-tweets](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1683-invalid-tweets) |
 <!---LeetCode Topics End-->
