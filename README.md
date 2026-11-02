@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0048-rotate-image) |
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0486-predict-the-winner](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [0788-rotated-digits](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0788-rotated-digits) |
@@ -262,6 +263,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0396-rotate-function](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0396-rotate-function) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0486-predict-the-winner](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [0835-image-overlap](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0835-image-overlap) |
@@ -632,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0015-3sum) |
 | [0332-reconstruct-itinerary](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0332-reconstruct-itinerary) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [1096-brace-expansion-ii](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1096-brace-expansion-ii) |
 | [1288-remove-covered-intervals](https://github.com/Shubham91999/Leetcode_Solutions/tree/master/1288-remove-covered-intervals) |
