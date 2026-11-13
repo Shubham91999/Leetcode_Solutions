@@ -16,18 +16,18 @@ class Solution:
 
         """
         total = 0
-        self.visited = set()
+        visited = set()
         n = len(isConnected)
 
         def dfs(city: int):
-            self.visited.add(city)
+            visited.add(city)
             for nei in range(n):
-                if isConnected[city][nei] == 1 and nei not in self.visited:
+                if isConnected[city][nei] == 1 and nei not in visited:
                     dfs(nei)
             return 
             
         for city in range(n):
-            if city not in self.visited:
+            if city not in visited:
                 total += 1
                 dfs(city)
                 
