@@ -6,17 +6,12 @@
 - product_id, first_year, quantity, price
 
 */
-
-SELECT 
+SELECT
     product_id, year AS first_year, quantity, price
 FROM
-    Sales
-WHERE
-    (product_id, year) IN (
-    SELECT
-        product_id,
-        MIN(year) as first_year
+    (SELECT
+        *,
+        RANK() OVER (PARTITION BY product_id ORDER BY year) as rn
     FROM
-        Sales
-    GROUP BY
-        product_id)
+        Sales) as sub
+WHERE rn = 1
