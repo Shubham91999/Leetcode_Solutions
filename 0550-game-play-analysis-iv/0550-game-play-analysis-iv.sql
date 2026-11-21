@@ -5,20 +5,10 @@
 */
 
 SELECT
-    -- *,
-    -- SUM(CASE WHEN a1.event_date = DATE_ADD(a2.first_login, INTERVAL 1 DAY) THEN 1 ELSE 0 END),
-    -- COUNT(DISTINCT a1.player_id),
-    ROUND(SUM(CASE WHEN a1.event_date = DATE_ADD(a2.first_login, INTERVAL 1 DAY) THEN 1 ELSE 0 END) / COUNT(DISTINCT a1.player_id), 2) AS fraction
-
+    ROUND(SUM(event_date = DATE_ADD(first_login, INTERVAL 1 DAY)) / COUNT(DISTINCT player_id), 2) as fraction
 FROM
-    Activity a1
-JOIN
     (SELECT
-        player_id,
-        MIN(event_date) AS first_login
+        player_id, event_date, 
+        MIN(event_date) OVER (PARTITION BY player_id) AS first_login
     FROM
-        Activity
-    GROUP BY
-        player_id) AS a2
-ON 
-    a1.player_id = a2.player_id
+        Activity) AS t 
