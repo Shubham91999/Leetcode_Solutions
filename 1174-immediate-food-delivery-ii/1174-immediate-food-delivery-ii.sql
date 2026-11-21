@@ -31,13 +31,12 @@ WHERE
     )
 */
 SELECT
-    ROUND(AVG(order_date = customer_pref_delivery_date) * 100, 2) AS immediate_percentage
-FROM 
+    ROUND(AVG(order_date=customer_pref_delivery_date) * 100, 2) AS immediate_percentage
+FROM
     (SELECT
         *,
         RANK() OVER (PARTITION BY customer_id ORDER BY order_date) as rn
     FROM
-        Delivery) AS t
+        Delivery) as sub
 WHERE 
     rn = 1
-
