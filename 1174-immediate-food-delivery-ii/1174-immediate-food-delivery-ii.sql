@@ -14,6 +14,7 @@
 - count_immediate / count_first
 
 */
+/*
 SELECT
     ROUND(AVG(order_date = customer_pref_delivery_date)*100, 2) AS immediate_percentage
 FROM
@@ -28,4 +29,15 @@ WHERE
                                     GROUP BY
                                         customer_id
     )
+*/
+SELECT
+    ROUND(AVG(order_date = customer_pref_delivery_date) * 100, 2) AS immediate_percentage
+FROM 
+    (SELECT
+        *,
+        RANK() OVER (PARTITION BY customer_id ORDER BY order_date) as rn
+    FROM
+        Delivery) AS t
+WHERE 
+    rn = 1
 
