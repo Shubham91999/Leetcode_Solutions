@@ -22,7 +22,7 @@ GROUP BY
 HAVING 
     COUNT(*) = 1
 */
-
+/*
 SELECT
     employee_id, department_id
 FROM
@@ -38,3 +38,14 @@ WHERE
         HAVING 
             COUNT(*) = 1
     )
+*/
+SELECT
+    employee_id, department_id
+FROM
+    (SELECT
+        *,
+        COUNT(*) OVER (PARTITION BY employee_id) AS dept_count
+    FROM
+        Employee) AS sub
+WHERE 
+    primary_flag = 'Y' OR dept_count = 1
