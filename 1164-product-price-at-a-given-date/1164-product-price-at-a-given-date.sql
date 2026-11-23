@@ -10,11 +10,14 @@ FROM
     Products p
 LEFT JOIN
     (SELECT
-        *,
+        product_id,
+        new_price,
         RANK() OVER (PARTITION BY product_id ORDER BY change_date DESC) AS rn
     FROM
         Products
     WHERE 
         change_date <= '2019-08-16') AS sub
-ON
+ON 
     p.product_id = sub.product_id AND sub.rn = 1
+
+
