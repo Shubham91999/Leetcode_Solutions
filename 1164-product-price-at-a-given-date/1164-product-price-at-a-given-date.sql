@@ -4,7 +4,7 @@
 - No order
 */
 SELECT 
-    p.product_id,
+    DISTINCT p.product_id,
     COALESCE(sub.new_price, 10) AS price
 FROM
     Products p
@@ -18,5 +18,3 @@ LEFT JOIN
         change_date <= '2019-08-16') AS sub
 ON
     p.product_id = sub.product_id AND sub.rn = 1
-GROUP BY
-    p.product_id
