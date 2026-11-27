@@ -7,6 +7,6 @@
 
 SELECT
     x, y, z,
-    IF(x+y <= z OR x+z <= y OR y+z <= x, 'No', 'Yes') AS triangle
+    CASE WHEN x+y <= z OR x+z <= y OR y+z <= X THEN 'No' ELSE 'Yes' END AS triangle
 FROM
     Triangle
