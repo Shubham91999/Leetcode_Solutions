@@ -20,17 +20,19 @@ WHERE
 ORDER BY
     e1.employee_id
 */
--- Write your PostgreSQL query statement below
-select
+SELECT
     employee_id
-from
-    Employees
-where
-    manager_id not in (
-        select
-            employee_id
-        from
-            Employees
-    ) and salary < 30000
-order by
-    employee_id
+FROM
+    Employees e1
+WHERE 
+    e1.salary < 30000 AND e1.manager_id IS NOT NULL
+    AND NOT EXISTS (
+        SELECT 1
+        FROM
+            Employees e2
+        WHERE 
+            e2.employee_id = e1.manager_id
+    )
+ORDER BY 
+    e1.employee_id
+
