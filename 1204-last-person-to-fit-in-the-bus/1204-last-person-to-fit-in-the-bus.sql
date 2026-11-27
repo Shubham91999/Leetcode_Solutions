@@ -9,7 +9,7 @@
 - Return only first  
 
 */
-
+/*
 SELECT 
     q1.person_name
 FROM
@@ -24,4 +24,19 @@ HAVING
     SUM(q2.weight) <= 1000
 ORDER BY
     SUM(q2.weight) DESC
+LIMIT 1
+*/
+SELECT
+    person_name
+FROM
+    (SELECT
+        turn,
+        person_name,
+        SUM(weight) OVER (ORDER BY turn) AS total_weight
+    FROM
+        Queue) as sub
+WHERE 
+    sub.total_weight <= 1000
+ORDER BY
+    sub.total_weight DESC
 LIMIT 1
