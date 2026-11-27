@@ -1,23 +1,28 @@
 /*
-- All products have price 10 initially
-- Find: prices of all producst on date 2019-08-16
+- By default price 10
+- find prices of all products (group by product) on date 2019-08-16
 - No order
+
+
 */
-SELECT 
-    DISTINCT p.product_id,
-    COALESCE(sub.new_price, 10) AS price
+SELECT
+    p1.product_id,
+    COALESCE(p2.price, 10) AS price
 FROM
-    Products p
+    Products p1
 LEFT JOIN
     (SELECT
         product_id,
-        new_price,
-        RANK() OVER (PARTITION BY product_id ORDER BY change_date DESC) AS rn
+        new_price AS price,
+        change_date,
+        RANK() OVER (PARTITION BY product_id ORDER BY change_date DESC) as rn
     FROM
         Products
-    WHERE 
-        change_date <= '2019-08-16') AS sub
+    WHERE
+        change_date <= '2019-08-16') AS p2
 ON 
-    p.product_id = sub.product_id AND sub.rn = 1
+    p1.product_id = p2.product_id AND p2.rn = 1
+GROUP BY
+    product_id
 
 
