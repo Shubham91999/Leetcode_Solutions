@@ -1,35 +1,18 @@
 /*
-- Could be done with multiple self-joins 
-  or
-  LEAD() LAG() functions
-*/
+- Return numbers that appear at least three times consecutively
+- No order
 
--- Using multiple self joins
-/*
-SELECT
-    DISTINCT l1.num AS ConsecutiveNums
-FROM
-    Logs l1 
-JOIN
-    Logs l2
-ON
-    l1.id = (l2.id + 1) AND l1.num = l2.num
-JOIN
-    Logs l3
-ON
-    l1.id = (l3.id + 2) AND l1.num = l3.num
+- Self join can be used considering id doesn't have gaps
+- LAG/LEAD window function -> deals with gaps, but needs rows present (max lag number + 1)
 */
-
--- using LAG function
 SELECT
-    DISTINCT num AS ConsecutiveNums
+    DISTINCT t1.current_num AS ConsecutiveNums
 FROM
-    (
-        SELECT 
-            num,
-            LAG(num, 1) OVER (ORDER BY id) AS prev1,
-            LAG(num, 2) OVER (ORDER BY id) AS prev2
-        FROM
-            Logs
-    ) AS sub
-WHERE num = prev1 AND num = prev2
+    (SELECT
+        num AS current_num,
+        LEAD(num, 1) OVER (ORDER BY id) AS next1,
+        LEAD(num, 2) OVER (ORDER BY id) AS next2
+    FROM
+        Logs) AS t1
+WHERE 
+    t1.current_num = t1.next1 AND t1.current_num = t1.next2
