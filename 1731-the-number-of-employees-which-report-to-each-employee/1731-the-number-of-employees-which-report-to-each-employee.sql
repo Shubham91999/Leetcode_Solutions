@@ -1,26 +1,32 @@
 /*
-- Manager -> employee who has atleast 1 other employee reporting to them
-- ids, name of manager, number of employees who report to them, avg age of reports 
-- avg age rounded to integer
-- order by employee_id
+- employee_id -> primary key 
+- Manager -> atleast 1 emp reporting to them
+- Return id, manager name, number of reportees, average age of reportees (rounded to nearest integer)
+- Order by employee_id
+
+- Manager id can be derived from reports_to column -> use distinct
+- name for that id from self join
+- group by reports_to -> count -> reports_count
+- group by reports_to -> avg of age -> average-age
+
 */
 SELECT 
-    manager_id AS employee_id, name, reports_count, average_age
-FROM
-    Employees e1
+    t2.manager_id AS employee_id,
+    t1.name,
+    t2.reports_count,
+    t2.average_age
+FROM 
+    Employees t1
 JOIN
-    (SELECT
+    (SELECT 
         reports_to AS manager_id,
-        COUNT(reports_to) AS reports_count,
+        COUNT(*) AS reports_count,
         ROUND(AVG(age), 0) AS average_age
     FROM
         Employees
-    WHERE 
-        reports_to IS NOT NULL
     GROUP BY
-        reports_to) as e2
-ON
-    e1.employee_id = e2.manager_id
+        reports_to) AS t2
+ON 
+    t1.employee_id = t2.manager_id
 ORDER BY
-    employee_id
-
+    t1.employee_id 
