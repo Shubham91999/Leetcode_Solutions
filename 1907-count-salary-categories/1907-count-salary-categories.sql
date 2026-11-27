@@ -5,17 +5,18 @@
 - Return 0 if no accounts - COALESCE
 - No order
 */
-
-
 SELECT
     t1.category,
     COUNT(t2.category) AS accounts_count
 FROM
-    (SELECT 'Low Salary' AS category
-    UNION ALL SELECT 'Average Salary' AS category
-    UNION ALL SELECT 'High Salary' AS Category) AS t1
+    (SELECT
+        'Low Salary' AS category
+    UNION ALL
+        SELECT 'Average Salary' AS category
+    UNION ALL
+        SELECT 'High Salary' AS category) AS t1
 LEFT JOIN
-    (SELECT 
+    (SELECT
         account_id,
         income,
         CASE 
@@ -25,7 +26,7 @@ LEFT JOIN
         END AS category
     FROM
         Accounts) AS t2
-ON 
+ON
     t1.category = t2.category
 GROUP BY
     t1.category
