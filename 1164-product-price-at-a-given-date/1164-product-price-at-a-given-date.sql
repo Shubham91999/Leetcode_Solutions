@@ -9,7 +9,7 @@ SELECT
     p1.product_id,
     COALESCE(p2.price, 10) AS price
 FROM
-    Products p1
+    (SELECT DISTINCT product_id FROM Products) AS p1
 LEFT JOIN
     (SELECT
         product_id,
@@ -22,7 +22,5 @@ LEFT JOIN
         change_date <= '2019-08-16') AS p2
 ON 
     p1.product_id = p2.product_id AND p2.rn = 1
-GROUP BY
-    product_id
 
 
